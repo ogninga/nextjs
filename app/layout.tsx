@@ -4,6 +4,13 @@ import React from "react";
 import { Inter, Space_Grotesk } from "next/font/google";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/context/ThemeProvider";
+export const metadata: Metadata = {
+  title: "DevLon",
+  description: "I am just learning :)",
+  icons: {
+    icon: "/assets/images/site-logo.svg",
+  },
+};
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,14 +22,6 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-spaceGrotesk",
 });
-
-export const metadata: Metadata = {
-  title: "DevLon",
-  description: "I am just learning :)",
-  icons: {
-    icon: "/assets/images/site-logo.svg",
-  },
-};
 
 export default function RootLayout({
   children,
